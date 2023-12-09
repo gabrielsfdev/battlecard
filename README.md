@@ -47,6 +47,8 @@ Dica: Você pode (preferencialmente) usar uma callback.
 
 Dica: adicione essa lógica dentro da função principal das rodadas (feito no requisito 4)
 
+###### Bonus
+
 ### 8. Adicione o atributo raridade as cartas e crie filtros para raridade, nomes e para o super trunfo:
 
 Adicione atributos à classe Carta, como `raridade`, e crie funções de filtro para nomes, raridades e conforme necessário.
