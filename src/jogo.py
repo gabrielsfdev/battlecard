@@ -83,5 +83,7 @@ if inicio == "sim":
             
             while menu != 0:
                 opcao = input("Menu Player")
-                if opcao == "Listar cartas":
+                if opcao.lower() == "Listar cartas":
                     print(f"suas cartas são: {cartas}")
+                if opcao.lower() == "numero de cartas":
+                    print(numero_cartas)
