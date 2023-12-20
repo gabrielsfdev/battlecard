@@ -28,7 +28,7 @@ Este é um mini projeto criado por @gabrielsfdev em fase alpha que pode conter f
 
 ###### Requisitos:
 
-### 1. Implemente uma lógica que adicione as cartas ao baralho:
+### 1. Implemente uma lógica que crie as cartas e adicione ao baralho:
 
 Dica: Utilize classes e dicionários.
 
