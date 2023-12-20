@@ -1,5 +1,12 @@
 # Supertrunfo
 
+--------------------------------------------------------------------------------------------------------------------
+# IMPORTANTE
+
+Para iniciar o projeto, crie uma branch release a partir da main e trabalhe posteriormente em branchs auxiliares a essa. Não tente, sob nenhuma hipótese, mergear na main.
+
+---------------------------------------------------------------------------------------------------------------------
+
 Regras do jogo:
 Supertrunfo é um jogo de cartas com determinados atributos em que cada rodada consiste em comparar os atributos de duas cartas e ver quem é o vencedor da rodada. No final da partida, ganha quem fizer mais pontos ou achar a carta supertrunfo primeiro. Para determinar o vencedor pode haver diferentes interpretações da regra como maior quantidade de pontos, no caso de contagem crescente de pontos, ou quem fizer seu oponente chegar a zero primeiro, contagem decrescente de hp/vida/ponto.
 Exemplos de jogos conhecidos no estilo supertrunfo: Yu-Gi-Oh!, Hearthstone, Pokemon entre outros.
@@ -10,7 +17,7 @@ Aqui você poderá treinar algumas das habilidades básicas aprendidas no curso 
 
 Algumas dicas importantes:
 
-- Procure seguir as dicas 😉
+- Procure ler e seguir todas as dicas 😉
 - Faça, quando possível, o projeto em componentes diferentes.
 - A estrutura de pastas é apenas sugestivo mas não obrigatório, sintam-se livres para utilizar sua própria organização
 - Lembrem de utilizar os conceitos aprendidos em git e github para evitar e/ou resolver conflitos.
