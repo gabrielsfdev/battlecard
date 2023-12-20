@@ -63,3 +63,4 @@ if inicio == "sim":
                     print(f"suas cartas são: {cartas}")
                 if opcao.lower() == "numero de cartas":
                     print(numero_cartas)
+            # Adicionar logica de combate entre as cartas
