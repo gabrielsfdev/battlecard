@@ -15,7 +15,7 @@ cartas_super_trunfo = {
     'Carta14': {'nome': 'Cavaleiro da Justiça', 'ataque': 88, 'defesa': 78, 'super_trunfo': False},
     'Carta15': {'nome': 'Fada Protetora', 'ataque': 81, 'defesa': 91, 'super_trunfo': False},
     'Carta16': {'nome': 'Ninja Sombrio', 'ataque': 94, 'defesa': 84, 'super_trunfo': False},
-    'Carta17': {'nome': 'Foguete Intergaláctico', 'ataque': 98, 'defesa': 98, 'super_trunfo': True},
+    'Carta17': {'nome': 'Foguete Intergaláctico', 'ataque': 92, 'defesa': 85, 'super_trunfo': False},
     'Carta18': {'nome': 'Pirata dos Sete Mares', 'ataque': 83, 'defesa': 93, 'super_trunfo': False},
     # 'Carta19': {'nome': 'Kenji', 'ataque': 00, 'defesa': 00, 'super_trunfo': True},
     # 'Carta20': {'nome': 'Marcotti', 'ataque': 00, 'defesa': 00, 'super_trunfo': True},
