@@ -7,9 +7,12 @@ Para iniciar o projeto, crie uma branch release a partir da main e trabalhe post
 
 ---------------------------------------------------------------------------------------------------------------------
 
-Regras do jogo:
+<details>
+  <summary><strong>Regras do jogo</strong></summary><br />
+
 Supertrunfo é um jogo de cartas com determinados atributos em que cada rodada consiste em comparar os atributos de duas cartas e ver quem é o vencedor da rodada. No final da partida, ganha quem fizer mais pontos ou achar a carta supertrunfo primeiro. Para determinar o vencedor pode haver diferentes interpretações da regra como maior quantidade de pontos, no caso de contagem crescente de pontos, ou quem fizer seu oponente chegar a zero primeiro, contagem decrescente de hp/vida/ponto.
 Exemplos de jogos conhecidos no estilo supertrunfo: Yu-Gi-Oh!, Hearthstone, Pokemon entre outros.
+</details>
 
 Este é um projetin para treino de competencias básicas no python.
 
@@ -18,25 +21,33 @@ Aqui você poderá treinar algumas das habilidades básicas aprendidas no curso 
 Algumas dicas importantes:
 
 - Procure ler e seguir todas as dicas 😉
+- Antes de começar, leia todos os requisitos mas faça um por um em [babysteps](https://eufacoprogramas.com/baby-steps/)
 - Faça, quando possível, o projeto em componentes diferentes.
 - A estrutura de pastas é apenas sugestivo mas não obrigatório, sintam-se livres para utilizar sua própria organização
 - Lembrem de utilizar os conceitos aprendidos em git e github para evitar e/ou resolver conflitos.
+<strong>- Não dê comite na Main ou em branchs de outras pessoas.</strong> Crie uma branch release (nomeDoAsp-release) e a partir dela, crie outras branchs que serão mergeadas na sua release. Sua release será sua main.
 
-Este é um mini projeto criado por @gabrielsfdev em fase alpha que pode conter falhas de lógica, erros de estruturação e quaisquer outros contratempos, esteja ciente disso antes de iniciar.
+Este é mini projeto criado por @gabrielsfdev em fase alpha pode conter falhas de lógica, erros de estruturação e quaisquer outros contratempos, esteja ciente disso antes de iniciar.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-###### Requisitos:
+# Requisitos:
 
-### 1. Implemente uma lógica que crie as cartas e adicione ao baralho:
+### 1. Implemente uma lógica que crie as cartas e adicione à um baralho customizado:
 
 Dica: Utilize classes e dicionários.
+<details>
+  <sumary>Exemplo de carta</sumary>
+{'Carta1': {'nome': 'Alumni', 'ataque': 99, 'defesa': 99, 'super_trunfo': True}}
+</details>
 
 ### 2. Implemente uma lógica que adicione os jogadores e as informações necessárias, como as cartas disponíveis:
 
-Dica: Utilize classes
+Dica: Utilize classes. EVITE utilizar o baralho pronto.
 
-### 3. Crie uma lógica de forma que possa listar todas as cartas disponíveis:
+### 3. Crie uma lógica de forma que possa listar todas as cartas disponíveis em sua mão:
+
+Dica: Utilize a classe já criada do player.
 
 ### 4. Crie a lógica do jogo:
 
@@ -48,11 +59,9 @@ Dica: Utilize funções, loops, condicionais e manipulação de classe.
 
 Dica: Você pode (preferencialmente) usar uma callback.
 
-### 5.1 Adicione a lógica para que dê ao usuário a opção de utilizar um baralho pronto ou adicionar suas próprias cartas.
+### 6. Adicione a lógica para um menu interativo em que dê ao usuário a opção de utilizar um baralho pronto ou adicionar suas próprias cartas.
 
 Dica: Você pode (preferencialmente) usar uma callback.
-
-### 6. Crie um menu interativo para que os jogadores escolham as cartas que querem jogar em cada rodada:
 
 ### 7. Adicione a lógica do super trunfo:
 
