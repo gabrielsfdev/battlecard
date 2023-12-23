@@ -18,7 +18,8 @@ Este é um projetin para treino de competencias básicas no python.
 
 Aqui você poderá treinar algumas das habilidades básicas aprendidas no curso como: Utilização de git e github, criação e manipulação de classes, criação e manipulação de funções e seus parametros, callbacks, condicionais, loops, dicionarios, listas e mais o que quiser implementar.
 
-Algumas dicas importantes:
+<details>
+  <summary><strong>💡Algumas dicas importantes💡</strong></summary><br />
 
 - Procure ler e seguir todas as dicas 😉
 - Antes de começar, leia todos os requisitos mas faça um por um em [babysteps](https://eufacoprogramas.com/baby-steps/)
@@ -27,8 +28,10 @@ Algumas dicas importantes:
 - Lembrem de utilizar os conceitos aprendidos em git e github para evitar e/ou resolver conflitos.
 - <strong> Não dê commit na main ou em branchs de outras pessoas.</strong> Crie uma branch release (nomeDoAsp-release) e a partir dela, crie outras branchs que serão mergeadas na sua release. Sua release será sua main.
 
+</details>
+
 <details>
-  <summary>💡Alguns comandos importante💡</summary>
+  <summary>🧑‍💻Alguns comandos importante🧑‍💻</summary>
   
   - Para clonar este repositório: `git clone git@github.com:gabrielsfdev/supertrunfo.git`
   - Para criar e mudar de branch: `git checkout -b nome-da-nova-branch`
