@@ -8,7 +8,7 @@ Para iniciar o projeto, crie uma branch release a partir da main e trabalhe post
 ---------------------------------------------------------------------------------------------------------------------
 
 <details>
-  <summary><strong>Regras do jogo</strong></summary><br />
+  <summary><strong>🎲Regras do jogo🎲</strong></summary><br />
 
 - Supertrunfo é um jogo de cartas com determinados atributos em que cada rodada consiste em comparar os atributos de duas cartas e ver quem é o vencedor da rodada. No final da partida, ganha quem fizer mais pontos ou achar a carta supertrunfo primeiro. Para determinar o vencedor pode haver diferentes interpretações da regra como maior quantidade de pontos, no caso de contagem crescente de pontos, ou quem fizer seu oponente chegar a zero primeiro, contagem decrescente de hp/vida/ponto.
 Exemplos de jogos conhecidos no estilo supertrunfo: Yu-Gi-Oh!, Hearthstone, Pokemon entre outros.
@@ -27,6 +27,20 @@ Algumas dicas importantes:
 - Lembrem de utilizar os conceitos aprendidos em git e github para evitar e/ou resolver conflitos.
 <strong>- Não dê comite na Main ou em branchs de outras pessoas.</strong> Crie uma branch release (nomeDoAsp-release) e a partir dela, crie outras branchs que serão mergeadas na sua release. Sua release será sua main.
 
+<details>
+  <summary>💡Alguns comandos importante💡</summary>
+  
+  - Para clonar este repositório: `git clone git@github.com:gabrielsfdev/supertrunfo.git`
+  - Para criar e mudar de branch: `git checkout -b nome-da-nova-branch`
+  - Para criar branch sem mudar para ela: `git branch nome-da-nova-branch`
+  - Para mudar de branch sem criar uma nova: `git checkout nome-da-branch`
+  - Para adicionar todas as alterações ao stage: `git add .`
+  - Para fazer commit: `git commit -m "mensagem do commit`
+  - Para dar push pela primeira vez: `git push -u origin nome-da-branch`
+  - Para dar pull e receber as novas atualizações feitas: `git pull`
+
+</details>
+
 Este é mini projeto criado por @gabrielsfdev em fase alpha pode conter falhas de lógica, erros de estruturação e quaisquer outros contratempos, esteja ciente disso antes de iniciar.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38,7 +52,11 @@ Este é mini projeto criado por @gabrielsfdev em fase alpha pode conter falhas d
 Dica: Utilize classes e dicionários.
 <details>
   <summary>Exemplo de carta</summary>
-<span style="color:red">{'Carta1': {'nome': 'Alumni', 'ataque': 99, 'defesa': 99, 'super_trunfo': True}}</span>
+  
+  ```python
+  {'Carta1': {'nome': 'Alumni', 'ataque': 99, 'defesa': 99, 'super_trunfo': True}}
+  ```
+  
 </details>
 
 ### 2. Implemente uma lógica que adicione os jogadores e as informações necessárias, como as cartas disponíveis:
