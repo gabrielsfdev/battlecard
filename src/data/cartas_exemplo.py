@@ -1,4 +1,4 @@
-cartas_super_trunfo = {
+default_deck = {
     'Carta1': {'nome': 'Dragão Flamejante', 'ataque': 90, 'defesa': 80, 'super_trunfo': False},
     'Carta2': {'nome': 'Robô de Aço', 'ataque': 85, 'defesa': 75, 'super_trunfo': False},
     'Carta3': {'nome': 'Nave Espacial', 'ataque': 88, 'defesa': 78, 'super_trunfo': False},
@@ -20,3 +20,5 @@ cartas_super_trunfo = {
     # 'Carta19': {'nome': 'Kenji', 'ataque': 00, 'defesa': 00, 'super_trunfo': True},
     # 'Carta20': {'nome': 'Marcotti', 'ataque': 00, 'defesa': 00, 'super_trunfo': True},
 }
+
+custom_deck = {}
