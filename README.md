@@ -25,7 +25,7 @@ Algumas dicas importantes:
 - Faça, quando possível, o projeto em componentes diferentes.
 - A estrutura de pastas é apenas sugestivo mas não obrigatório, sintam-se livres para utilizar sua própria organização
 - Lembrem de utilizar os conceitos aprendidos em git e github para evitar e/ou resolver conflitos.
-<strong>- Não dê comite na Main ou em branchs de outras pessoas.</strong> Crie uma branch release (nomeDoAsp-release) e a partir dela, crie outras branchs que serão mergeadas na sua release. Sua release será sua main.
+- <strong> Não dê commit na main ou em branchs de outras pessoas.</strong> Crie uma branch release (nomeDoAsp-release) e a partir dela, crie outras branchs que serão mergeadas na sua release. Sua release será sua main.
 
 <details>
   <summary>💡Alguns comandos importante💡</summary>
