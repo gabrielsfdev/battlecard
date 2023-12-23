@@ -10,7 +10,7 @@ Para iniciar o projeto, crie uma branch release a partir da main e trabalhe post
 <details>
   <summary><strong>Regras do jogo</strong></summary><br />
 
-Supertrunfo é um jogo de cartas com determinados atributos em que cada rodada consiste em comparar os atributos de duas cartas e ver quem é o vencedor da rodada. No final da partida, ganha quem fizer mais pontos ou achar a carta supertrunfo primeiro. Para determinar o vencedor pode haver diferentes interpretações da regra como maior quantidade de pontos, no caso de contagem crescente de pontos, ou quem fizer seu oponente chegar a zero primeiro, contagem decrescente de hp/vida/ponto.
+- Supertrunfo é um jogo de cartas com determinados atributos em que cada rodada consiste em comparar os atributos de duas cartas e ver quem é o vencedor da rodada. No final da partida, ganha quem fizer mais pontos ou achar a carta supertrunfo primeiro. Para determinar o vencedor pode haver diferentes interpretações da regra como maior quantidade de pontos, no caso de contagem crescente de pontos, ou quem fizer seu oponente chegar a zero primeiro, contagem decrescente de hp/vida/ponto.
 Exemplos de jogos conhecidos no estilo supertrunfo: Yu-Gi-Oh!, Hearthstone, Pokemon entre outros.
 </details>
 
@@ -37,8 +37,8 @@ Este é mini projeto criado por @gabrielsfdev em fase alpha pode conter falhas d
 
 Dica: Utilize classes e dicionários.
 <details>
-  <sumary>Exemplo de carta</sumary>
-{'Carta1': {'nome': 'Alumni', 'ataque': 99, 'defesa': 99, 'super_trunfo': True}}
+  <summary>Exemplo de carta</summary>
+<span style="color:red">{'Carta1': {'nome': 'Alumni', 'ataque': 99, 'defesa': 99, 'super_trunfo': True}}</span>
 </details>
 
 ### 2. Implemente uma lógica que adicione os jogadores e as informações necessárias, como as cartas disponíveis:
