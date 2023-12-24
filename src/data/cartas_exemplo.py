@@ -21,4 +21,5 @@ default_deck = {
     # 'Carta20': {'nome': 'Marcotti', 'ataque': 00, 'defesa': 00, 'super_trunfo': True},
 }
 
-custom_deck = {}
+custom_deck_p1 = {}
+custom_deck_p2 = {}
