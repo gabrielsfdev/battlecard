@@ -15,10 +15,4 @@ class Card:
         
     def deck_view():
         pass
-
-    def atack():
-        pass
-
-    def defend():
-        pass
 """
