@@ -11,8 +11,14 @@ class Player:
         
     def cards_in_hand():
         pass
+    
+    def atack():
+        pass
+
+    def defend():
+        pass
         
-    def hp_decrease():
+    def take_card_to_deck():
         pass
 """
 
