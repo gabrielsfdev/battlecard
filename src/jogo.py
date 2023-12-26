@@ -23,7 +23,7 @@ def match(deck=custom_deck_p1, deck2=custom_deck_p2):
     if deck == custom_deck_p1:
         print("Primeiro, adicione as cartas que irão jogar.")
         time.sleep(1.5)
-        # deck_player1 = [deck_create(deck) for _ in range(10)]
+        # deck_player1 = [deck_create(deck) for _ in range(10)] Uma outra possibilidade de fazer o deck
         # deck_player2 = [deck_create(deck2) for _ in range(10)]
         while len(deck_player1) < 10 and len(deck_player2) < 10: #Confecção do deck
             os.system('cls' if os.name == 'nt' else 'clear') #Limpa o terminal/adição
@@ -59,6 +59,7 @@ def match(deck=custom_deck_p1, deck2=custom_deck_p2):
             player1.attack(player2, choose_p1, defense_card, choose_p2)
             player1.hand = dict(sorted(player1.hand.items()))
             player2.hand = dict(sorted(player2.hand.items()))
+
         else:
             player2.view_hand()
             choose_p2 = int(input("Vez de Player2. Escolha o índice da carta com que deseja atacar: "))
@@ -70,8 +71,10 @@ def match(deck=custom_deck_p1, deck2=custom_deck_p2):
             player2.hand = dict(sorted(player2.hand.items()))
 
         who_plays = 3 - who_plays
-
+        
         time.sleep(1.5)
+        print("HP do player1 :", player1.hp)
+        print("HP do player2 :", player2.hp)
         print("Próxima rodada...")
         time.sleep(1)
 
@@ -80,4 +83,4 @@ def match(deck=custom_deck_p1, deck2=custom_deck_p2):
 
 
 if __name__ == "__main__":   
-    print(match(deck=custom_deck_p1))
+    print(match(deck=default_deck))
