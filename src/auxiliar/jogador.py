@@ -11,6 +11,7 @@ class Player:
         self.hand = hand
         self.deck = deck.copy()
         self.deck_to_hand = list(self.deck.items())
+        self.round = 1
         self.cards_in_hand()
 
     def cards_in_hand(self):
@@ -21,6 +22,7 @@ class Player:
             deck_to_hand = self.deck_to_hand
             while index <= 5:
                 random_num = random.randrange(0, len(deck_to_hand))
+                if deck_to_hand[random_num][1]["super_card"] == True: continue
                 hand[f"Carta_{index}"] = deck_to_hand[random_num][1]
                 deck.pop(deck_to_hand[random_num][0])
                 deck_to_hand.pop(random_num)
@@ -37,11 +39,13 @@ class Player:
                 index_card += 1
             while index < num_cards:
                     random_num = random.randrange(0, len(deck_to_hand))
+                    if self.round < 3 and deck_to_hand[random_num][1]["super_card"] == True: continue
                     self.hand[f"Carta_{index_card}"] = deck_to_hand[random_num][1]
                     self.deck.pop(deck_to_hand[random_num][0])
                     deck_to_hand.pop(random_num)
                     index += 1
             index_card = 1
+            self.round += 1
 
     def view_hand(self):
         index = 1
@@ -68,10 +72,6 @@ class Player:
         target_player.hand.pop(f"Carta_{card_index_p2}")
         self.take_card_to_deck(1)
         target_player.take_card_to_deck(1)
-        
-        
-    def hp_decrease():
-        pass
 
 if __name__ == "__main__":
     pass

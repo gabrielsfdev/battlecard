@@ -17,8 +17,8 @@ default_deck = {
     'Carta16': {'nome': 'Ninja Sombrio', 'ataque': 94, 'defesa': 84, 'super_card': False},
     'Carta17': {'nome': 'Foguete Intergaláctico', 'ataque': 92, 'defesa': 85, 'super_card': False},
     'Carta18': {'nome': 'Pirata dos Sete Mares', 'ataque': 83, 'defesa': 93, 'super_card': False},
-    # 'Carta19': {'nome': 'Kenji', 'ataque': 00, 'defesa': 00, 'super_card': True},
-    # 'Carta20': {'nome': 'Marcotti', 'ataque': 00, 'defesa': 00, 'super_card': True},
+    'Carta19': {'nome': 'Kenji', 'ataque': 00, 'defesa': 00, 'super_card': True},
+    'Carta20': {'nome': 'Marcotti', 'ataque': 00, 'defesa': 00, 'super_card': True},
 }
 
 custom_deck_p1 = {}
