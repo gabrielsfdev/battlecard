@@ -27,28 +27,30 @@ class Player:
                 index += 1
     
     def take_card_to_deck(self, num_cards):
-        index = 0
-        index_card = 1
-        deck_to_hand = self.deck_to_hand
-        while index_card <= 5:
-            if f"Carta_{index_card}" not in self.hand:
-                break
-            index_card += 1
-        while index < num_cards:
-                random_num = random.randrange(0, len(deck_to_hand))
-                self.hand[f"Carta_{index_card}"] = deck_to_hand[random_num][1]
-                self.deck.pop(deck_to_hand[random_num][0])
-                deck_to_hand.pop(random_num)
-                index += 1
+        if len(self.deck_to_hand) > 0:
+            index = 0
+            index_card = 1
+            deck_to_hand = self.deck_to_hand
+            while index_card <= 5:
+                if f"Carta_{index_card}" not in self.hand:
+                    break
+                index_card += 1
+            while index < num_cards:
+                    random_num = random.randrange(0, len(deck_to_hand))
+                    self.hand[f"Carta_{index_card}"] = deck_to_hand[random_num][1]
+                    self.deck.pop(deck_to_hand[random_num][0])
+                    deck_to_hand.pop(random_num)
+                    index += 1
+            index_card = 1
 
     def view_hand(self):
         index = 1
-        for _x, y in self.hand.items():
-            print(f"{index} - "
+        for x, y in self.hand.items():
+            print(f"{x[6:]} - "
             f"Nome: {y['nome']},"
             f" ataque: {y['ataque']},"
             f" defesa: {y['defesa']},"
-            f" supertrunfo?: {'Sim' if y['super_trunfo'] == True else 'Não'}")
+            f" supercard?: {'Sim' if y['super_card'] == True else 'Não'}")
             index += 1
     
     def attack(self, target_player, card_index_p1, defense_card, card_index_p2):
@@ -73,5 +75,3 @@ class Player:
 
 if __name__ == "__main__":
     pass
-
-
