@@ -16,7 +16,7 @@ def match(deck='deck1', deck2='Optional Deck2', deck_choice=deck_choice()):
         deck2 = custom_deck_p2
         print("Primeiro, adicione as cartas que irão jogar.")
         time.sleep(1.5)
-        # deck_player1 = [deck_create(deck) for _ in range(10)]
+        # deck_player1 = [deck_create(deck) for _ in range(10)] Uma outra possibilidade de fazer o deck
         # deck_player2 = [deck_create(deck2) for _ in range(10)]
         while len(deck_player1) < 10 and len(deck_player2) < 10: #Confecção do deck
             os.system('cls' if os.name == 'nt' else 'clear') #Limpa o terminal/adição
@@ -49,13 +49,12 @@ def match(deck='deck1', deck2='Optional Deck2', deck_choice=deck_choice()):
                 player1.view_hand()
                 choose_p1 = int(input("Vez de Player1. Escolha o índice da carta com que deseja atacar: "))
                 player2.view_hand()
-                choose_p2 = int(input("Escolha o índice da carta com que deseja defender: "))
+                choose_p2 = int(input("Vez de Player2. Escolha o índice da carta com que deseja defender: "))
                 if not (1 <= choose_p1 <= 5) or not (1 <= choose_p2 <= 5): raise ValueError("Digite um número de 1 a 5")
                 defense_card = player2.hand[f"Carta_{choose_p2}"]
                 player1.attack(player2, choose_p1, defense_card, choose_p2)
                 player1.hand = dict(sorted(player1.hand.items()))
                 player2.hand = dict(sorted(player2.hand.items()))
-
             else:
                 player2.view_hand()
                 choose_p2 = int(input("Vez de Player2. Escolha o índice da carta com que deseja atacar: "))
@@ -93,3 +92,4 @@ def match(deck='deck1', deck2='Optional Deck2', deck_choice=deck_choice()):
 
 if __name__ == "__main__":   
     print(match())
+
