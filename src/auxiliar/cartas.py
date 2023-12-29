@@ -13,6 +13,4 @@ class Card:
     def add_card():
         pass
         
-    def deck_view():
-        pass
 """
